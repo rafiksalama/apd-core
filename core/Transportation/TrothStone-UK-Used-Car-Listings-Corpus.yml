@@ -1,0 +1,35 @@
+---
+title: TrothStone UK Used-Car Listings Corpus
+homepage: https://trothstone.com/
+category: Transportation
+description: 417,146 graded UK used-car listings across 78 makes, each scored on modelled true monthly cost of ownership (depreciation + finance + running costs) with published error ranges (RMSLE 0.161, MAE ~1,770 GBP). Aggregate counts, per-make volumes and the full scoring methodology are queryable as unauthenticated JSON at trothstone.com/api/stats, /api/makes, /api/models, /api/search and /api/value; per-listing records stay on the source adverts, so the site links out rather than redistributing them. Not financial advice; UK market only.
+version: 1
+keywords: cars,vehicles,used cars,car prices,automotive,United Kingdom,resale value,price index,transport economics
+image:
+temporal: 2026
+spatial: United Kingdom (vehicle market)
+access_level: public
+copyrights:
+accrual_periodicity: daily
+specification: https://trothstone.com/methodology/
+data_quality: true
+data_dictionary: https://trothstone.com/llms.txt
+language: en
+license: CC-BY-4.0
+publisher: TrothStone
+organization:
+  - name: TrothStone
+    web: https://trothstone.com/
+issued_time: 2026-09-14
+sources:
+  - name: Aggregate corpus statistics (JSON)
+    access_url: https://trothstone.com/api/stats
+  - name: Per-make listing volumes (JSON)
+    access_url: https://trothstone.com/api/makes
+  - name: Make/model-level metrics (JSON)
+    access_url: https://trothstone.com/api/models
+  - name: Scoring methodology and error ranges
+    access_url: https://trothstone.com/methodology/
+references:
+  - title: Wheelwise - the scoring engine and corpus documentation
+    reference: https://github.com/Limoja/wheelwise
